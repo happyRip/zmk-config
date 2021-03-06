@@ -15,10 +15,6 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		&left_encoder {
-			resolution = <2>; 
-		};
-
 		default_layer {
 // --------------------------------------------- Colemak - DH -------------------------------------------
 // | ESC |  Q  |  W  |  F  |  P  |  B  |                            |  J  |  L  |  U  |  Y  |  ;  |  \  |
@@ -34,6 +30,10 @@
 			>;
 
 			sensor-bindings = <&inc_dec_kp K_VOL_DN K_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+
+			&left_encoder {
+				resolution = <2>; 
+			};
 		};
 
 		modifier_layer { // keys on each side compliment each other in some way
