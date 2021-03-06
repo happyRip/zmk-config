@@ -58,8 +58,8 @@
 
 			bindings = <
 	&gresc    &kp N1 &kp N2   &kp N3     &kp N4    &kp N5												 			 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0 &kp BSLH
-	&kp TAB   &none  &kp LEFT &kp UP     &kp RIGHT &none														 	 &none    &kp KP_N4 &kp KP_N5 &kp KP_N5	&kp    &kp SQT
-	&kp LSHFT &none  &none    &kp DOWN   &none     &none     &kp ESC    &lt LOWER SPACE		&lt RAISE RET	&kp TAB  &none    &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp    &kp RCTRL
+	&kp TAB   &none  &kp LEFT &kp UP     &kp RIGHT &none														 	 &none    &kp KP_N4 &kp KP_N5 &kp KP_N5	&none  &kp SQT
+	&kp LSHFT &none  &none    &kp DOWN   &none     &none     &kp ESC    &lt LOWER SPACE		&lt RAISE RET	&kp TAB  &none    &kp KP_N1 &kp KP_N2 &kp KP_N3 &none  &kp RCTRL
 							  &cp C_MUTE &kp LGUI  &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL  &kp RALT  &kp HOME
 			>;
 
