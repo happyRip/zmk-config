@@ -16,11 +16,11 @@
 		compatible = "zmk,keymap";
 
 		default_layer {
-// ------------------------------------------------------- Colemak - DH ------------------------------------------------------
-// |  ESC  |  Q  |  W  |  F   |  P  |  B   |                                          |  J  |  L  |   U   |  Y  |  ;  |  \   |
-// |  TAB  |  A  |  R  |  S   |  T  |  G   |                                          |  M  |  N  |   E   |  I  |  O  |  '   |
-// | SHIFT |  Z  |  X  |  C   |  D  |  V   |   ESC   | L SHIFT |  |   RET   |   TAB   |  K  |  H  |   ,   |  .  |  /  | CTRL |
-//                     | Mute | GUI | CTRL |  SPACE  | L SHIFT |  |   RET   |   BSPC  | DEL | ALT |  HOME |
+// --------------------------------------------- Colemak - DH -------------------------------------------
+// | ESC |  Q  |  W  |  F  |  P  |  B  |                            |  J  |  L  |  U  |  Y  |  ;  |  \  |
+// | TAB |  A  |  R  |  S  |  T  |  G  |                            |  M  |  N  |  E  |  I  |  O  |  '  |
+// | SFT |  Z  |  X  |  C  |  D  |  V  |  ESC  | SFT |  | RET | TAB |  K  |  H  |  ,  |  .  |  /  | CTR |
+//                   | MUT | GUI | CTR |  SPC  | SFT |  | RET | BSP | DEL | ALT | HOM |
 
 			bindings = <
 	&gresc    &kp Q &kp W &kp F      &kp P    &kp B												 		&kp J 	 &kp L	 &kp U     &kp Y	&kp SEMI &kp BSLH
@@ -33,11 +33,11 @@
 		};
 
 		modifier_layer { // keys on each side compliment each other in some way
-// ------------------------------------------------------ MODIFIER LAYER -----------------------------------------------------
-// |  ESC  |  #  |  %  |  *   |  +  |  @   |                                          |  &  |  -  |   =   |  ^  |  $  |  \   |
-// |  TAB  |  {  |  [  |  <   |  (  |  /   |                                          |  \  |  )  |   >   |  ]  |  }  |  '   |
-// | SHIFT |  |  |  '  |  !   |  :  |  ,   |   ESC   | L SHIFT |  |   RET   |   TAB   |  .  |  ;  |   ?   |  "  |  _  | CTRL |
-//                     | Mute | GUI | CTRL |  SPACE  | L SHIFT |  |   RET   |   BSPC  | DEL | ALT |  HOME |
+// ------------------------------------------ MODIFIER LAYER --------------------------------------------
+// | ESC |  #  |  %  |  *  |  +  |  @  |                           |  &  |  -  |   =  |  ^  |  $  |  \  |
+// | TAB |  {  |  [  |  <  |  (  |  /  |                           |  \  |  )  |   >  |  ]  |  }  |  '  |
+// | SFT |  |  |  '  |  !  |  :  |  ,  | ESC | SFT |  | RET |  TAB |  .  |  ;  |   ?  |  "  |  _  | CTR |
+//                   | MUT | GUI | CTR | SPC | SFT |  | RET |  BSP | DEL | ALT |  HOM |
 
 			bindings = <
 	&gresc    &kp HASH &kp PRCNT  &kp STAR  &kp PLUS  &kp AT												 			 &kp AMPS &kp MINUS &kp EQUAL &kp CARET	&kp DLLR  &kp BSLH
@@ -50,17 +50,17 @@
 		};
 
 		number_layer {
-// ------------------------------------------------------- NUMBER LAYER -----------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4  |  5   |                                          |  6  |  7  |   8   |  9  |    |  \   |
-// |  TAB  |     | LFT |  UP  | RGT |      |                                          |     |  4  |   5   |  6  |    |  '   |
-// | SHIFT |     |     | DWN  |     |      |   ESC   | L SHIFT |  |   RET   |   TAB   |     |  1  |   2   |  3  |    | CTRL |
-//                     | Mute | GUI | CTRL |  SPACE  | L SHIFT |  |   RET   |   BSPC  | DEL |  0  |  HOME |
+// ------------------------------------------ NUMBER LAYER --------------------------------------------
+// | ESC |  1  |  2  |  3  |  4  |  5  |                          |  6  |  7  |  8  |  9  |     |  \  |
+// | TAB |     | LFT |  UP | RGT |     |                          |     |  4  |  5  |  6  |     |  '  |
+// | SFT |     |     | DWN |     |     | ESC | SFT |  | RET | TAB |     |  1  |  2  |  3  |     | CTR |
+//                   | MUT | GUI | CTR | SPC | SFT |  | RET | BSP | DEL |  0  | HOM |
 
 			bindings = <
 	&gresc    &kp N1 &kp N2   &kp N3     &kp N4    &kp N5												 			 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0 &kp BSLH
 	&kp TAB   &none  &kp LEFT &kp UP     &kp RIGHT &none														 	 &none    &kp KP_N4 &kp KP_N5 &kp KP_N5	&none  &kp SQT
 	&kp LSHFT &none  &none    &kp DOWN   &none     &none     &kp ESC    &lt LOWER SPACE		&lt RAISE RET	&kp TAB  &none    &kp KP_N1 &kp KP_N2 &kp KP_N3 &none  &kp RCTRL
-							  &cp C_MUTE &kp LGUI  &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL  &kp RALT  &kp HOME
+							  &cp C_MUTE &kp LGUI  &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL  &kp KP_N0 &kp HOME
 			>;
 
 			sensor-bindings = <&inc_dec_kp K_VOL_DN2 K_VOL_UP2 &inc_dec_kp PG_DN PG_UP>;
