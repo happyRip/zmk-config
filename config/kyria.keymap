@@ -12,7 +12,7 @@
 //#include <dt-bindings/zmk/rgb.h>
 
 &left_encoder {
-	resolution = <8>;
+	resolution = <4>;
 };
 
 / {
@@ -33,7 +33,7 @@
 					&lt LOWER C_MUTE &kp LGUI &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL &kp RALT &kp HOME
 			>;
 
-			sensor-bindings = <&inc_dec_kp K_VOL_DN K_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
 		};
 
 		modifier_layer { // keys on each side compliment each other in some way
