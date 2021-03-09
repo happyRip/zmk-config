@@ -62,13 +62,13 @@
 // ------------------------------------------ NUMBER LAYER --------------------------------------------
 // | ESC |  1  |  2  |  3  |  4  |  5  |                          |  6  |  7  |  8  |  9  |  0  |  \  |
 // | TAB | TAB | LFT |  UP | RGT |     |                          |  0  |  4  |  5  |  6  |     |  '  |
-// | SFT |     |     | DWN |     |     | ESC | SPC |  |     | GUI |     |  1  |  2  |  3  | BLT | CTR |
+// | SFT |     |     | DWN |     |     | ESC | SPC |  |     | GUI |     |  1  |  2  |  3  |     | CTR |
 //                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
 
 			bindings = <
-	&gresc    &kp N1  &kp N2   &kp N3     &kp N4    &kp N5												 &kp N6    &kp N7    &kp N8    &kp N9    &kp N0     &kp BSLH
-	&kp TAB   &kp TAB &kp LEFT &kp UP     &kp RIGHT &none												 &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &none      &kp SQT
-	&kp LSHFT &none   &none    &kp DOWN   &none     &none     &gresc     &kp SPACE		&trans	&kp LGUI &none     &kp KP_N1 &kp KP_N2 &kp KP_N3 &bt BT_CLR &kp RCTRL
+	&gresc    &kp N1  &kp N2   &kp N3     &kp N4    &kp N5												 &kp N6    &kp N7    &kp N8    &kp N9    &kp N0 &kp BSLH
+	&kp TAB   &kp TAB &kp LEFT &kp UP     &kp RIGHT &none												 &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &none  &kp SQT
+	&kp LSHFT &none   &none    &kp DOWN   &none     &none     &gresc     &kp SPACE		&trans	&kp LGUI &none     &kp KP_N1 &kp KP_N2 &kp KP_N3 &none  &kp RCTRL
 							   &cp C_MUTE &kp TAB   &kp LCTRL &kp LSHFT  &kp SPACE		&trans	&kp BSPC &kp DEL   &kp RALT  &none
 			>;
 
@@ -76,10 +76,16 @@
 		};
 
 		utility_layer {
+// ------------------------------------------ NUMBER LAYER --------------------------------------------
+// | F1  | F2  | F3  | F4  | F5  | F6  |                          | F7  | F8  | F9  | F10 | F11 | F12 |
+// | EFF | SPI | BRI | SAI | HUI | TOG |                          | BT0 | BT1 | BT2 | BT3 | BT4 |     |
+// | EFR | SPD | BRD | SAD | HUD |     | ESC | SPC |  |     | GUI | PTG | NXT | PRV | CLR |     | BTG |
+//                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
+
 			bindings = <
 	&kp F1          &kp F2           &kp F3          &kp F4           &kp F5            &kp F6												                     &kp F7            &kp F8	    &kp F9       &kp F10      &kp F11      &kp F12
-	&rgb_ug RGB_EFF &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_SAI  &rgb_ug RGB_HUI   &rgb_ug RGB_TOG												 		     &bt BT_SEL 0      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
-	&rgb_ug RGB_EFR &rgb_ug RGB_SPD  &rgb_ug RGB_BRD &rgb_ug RGB_SAD  &rgb_ug RGB_HUD   &rgb_ug RGB_EFR &gresc     &lt LOWER SPACE		&lt RAISE RET	&kp LGUI &ext_power EP_TOG &bt BT_NXT   &bt BT_PRV   &bt BT_CLR   &trans       &out OUT_TOG
+	&rgb_ug RGB_EFF &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_SAI  &rgb_ug RGB_HUI   &rgb_ug RGB_TOG												 		     &bt BT_SEL 0      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
+	&rgb_ug RGB_EFR &rgb_ug RGB_SPD  &rgb_ug RGB_BRD &rgb_ug RGB_SAD  &rgb_ug RGB_HUD   &none           &gresc     &lt LOWER SPACE		&lt RAISE RET	&kp LGUI &ext_power EP_TOG &bt BT_NXT   &bt BT_PRV   &bt BT_CLR   &trans       &out OUT_TOG
 					 								 &lt LOWER C_MUTE &kp TAB           &kp LCTRL       &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL           &kp RALT     &none
 			>;
 
