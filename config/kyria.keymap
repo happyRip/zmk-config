@@ -31,6 +31,8 @@
 // | SFT |  Z  |  X  |  C  |  D  |  V  |  ESC  | SPC |  | RET | GUI |  K  |  H  |  ,  |  .  |  /  | CTR |
 //                   | MUT | TAB | CTR |  SFT  | SPC |  | RET | BSP | DEL | ALT | GMR |
 
+			label = "Default";
+
 			bindings = <
 	&gresc    &kp Q &kp W &kp F      &kp P   &kp B												 		       &kp J   &kp L	&kp U     &kp Y	   &kp SEMI      &kp BSLH
 	&kp TAB   &kp A &kp R &kp S      &kp T   &kp G												 		       &kp M   &kp N    &kp E 	  &kp I    &kp O 	     &kp SQT
@@ -47,6 +49,8 @@
 // | TAB |  {  |  [  |  <  |  (  |  /  |                           |  \  |  )  |   >  |  ]  |  }  |  '  |
 // | SFT |  |  |  '  |  !  |  :  |  ,  | ESC |     |  | RET |  GUI |  .  |  ;  |   ?  |  "  |  _  | CTR |
 //                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |  GMR |
+
+			label = "Modifier";
 
 			bindings = <
 	&gresc    &kp HASH &kp PRCNT  &kp STAR &kp PLUS  &kp AT												 &kp AMPS &kp MINUS &kp EQUAL &kp CARET &kp DLLR  &kp BSLH
@@ -65,6 +69,8 @@
 // | SFT |     |     | DWN |     |     | ESC | SPC |  |     | GUI |     |  1  |  2  |  3  |     | CTR |
 //                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
 
+			label = "Number";
+
 			bindings = <
 	&gresc    &kp N1  &kp N2   &kp N3     &kp N4    &kp N5												 &kp N6    &kp N7    &kp N8    &kp N9    &kp N0 &kp BSLH
 	&kp TAB   &kp TAB &kp LEFT &kp UP     &kp RIGHT &none												 &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &none  &kp SQT
@@ -82,6 +88,8 @@
 // | EFR | SPD | BRD | SAD | HUD |     | ESC | SPC |  |     | GUI | PTG | NXT | PRV | CLR |     | BTG |
 //                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
 
+			label = "Utility";
+
 			bindings = <
 	&kp F1          &kp F2           &kp F3          &kp F4           &kp F5            &kp F6												                     &kp F7            &kp F8	    &kp F9       &kp F10      &kp F11      &kp F12
 	&rgb_ug RGB_EFF &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_SAI  &rgb_ug RGB_HUI   &rgb_ug RGB_TOG												 		     &bt BT_SEL 0      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none
@@ -98,6 +106,8 @@
 // | TAB |  2  |  A  |  W  |  D  |  F  |                           |     |     |     |     |     |  '  |
 // | SFT |  3  |  X  |  S  |  C  |  M  | ESC | SPC |  | RET |  GUI |     |     |     |     |     | CTR |
 //                   | MUT | TAB | CTR | SFT | SPC |  | RET |  BSP | DEL | ALT | DEF |
+
+			label = "Game";
 
 			bindings = <
 	&gresc    &kp Q &kp W &kp F      &kp P   &kp B												 		         &kp J   &kp L    &kp U     &kp Y   &kp SEMI &kp BSLH
