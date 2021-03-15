@@ -45,16 +45,16 @@
 
 		modifier_layer { // keys on each side compliment each other in some way
 // ------------------------------------------ MODIFIER LAYER --------------------------------------------
-// | ESC |  #  |  %  |  *  |  +  |  @  |                           |  &  |  -  |   =  |  ^  |  $  |  \  |
-// | TAB |  {  |  [  |  <  |  (  |  /  |                           |  \  |  )  |   >  |  ]  |  }  |  '  |
+// | ESC |  {  |  [  |  <  |  (  |  /  |                           |  \  |  )  |   >  |  ]  |  }  |  '  |
+// | TAB |  #  |  %  |  *  |  +  |  @  |                           |  &  |  -  |   =  |  ^  |  $  |  \  |
 // | SFT |  |  |  '  |  !  |  :  |  ,  | ESC |     |  | RET |  GUI |  .  |  ;  |   ?  |  "  |  _  | CTR |
 //                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |  GMR |
 
 			label = "Modifier";
 
 			bindings = <
-	&gresc    &kp HASH &kp PRCNT  &kp STAR &kp PLUS  &kp AT												 &kp AMPS &kp MINUS &kp EQUAL &kp CARET &kp DLLR  &kp BSLH
-	&kp TAB   &kp LBRC &kp LBKT	  &kp LT   &kp LPAR  &kp FSLH											 &kp BSLH &kp RPAR  &kp GT	  &kp RBKT	&kp RBRC  &kp SQT
+	&gresc    &kp LBRC &kp LBKT	  &kp LT   &kp LPAR  &kp FSLH							                 &kp BSLH &kp RPAR  &kp GT	  &kp RBKT	&kp RBRC  &kp BSLH
+	&kp TAB   &kp HASH &kp PRCNT  &kp STAR &kp PLUS  &kp AT                                              &kp AMPS &kp MINUS &kp EQUAL &kp CARET &kp DLLR  &kp SQT                 
 	&kp LSHFT &kp PIPE &kp APOS	  &kp EXCL &kp COLON &kp COMMA &gresc     &trans		&kp RET	&kp LGUI &kp DOT  &kp SEMI  &kp QMARK &kp DQT   &kp UNDER &kp RCTRL
 						    	  &trans   &kp TAB   &kp LCTRL &kp LSHFT  &trans		&kp RET	&kp BSPC &kp DEL  &kp RALT  &none
 			>;
@@ -66,16 +66,16 @@
 // ------------------------------------------ NUMBER LAYER --------------------------------------------
 // | ESC |  1  |  2  |  3  |  4  |  5  |                          |  6  |  7  |  8  |  9  |  0  |  \  |
 // | TAB | TAB | LFT |  UP | RGT |     |                          |  0  |  4  |  5  |  6  |     |  '  |
-// | SFT |     |     | DWN |     |     | ESC | SPC |  |     | GUI |     |  1  |  2  |  3  |     | CTR |
+// | SFT |     |     | DWN |     |     | ESC | SPC |  |     | GUI |  .  |  1  |  2  |  3  |     | CTR |
 //                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
 
 			label = "Number";
 
 			bindings = <
-	&gresc    &kp N1  &kp N2   &kp N3     &kp N4    &kp N5												 &kp N6    &kp N7    &kp N8    &kp N9    &kp N0 &kp BSLH
-	&kp TAB   &kp TAB &kp LEFT &kp UP     &kp RIGHT &none												 &kp KP_N0 &kp KP_N4 &kp KP_N5 &kp KP_N6 &none  &kp SQT
-	&kp LSHFT &none   &none    &kp DOWN   &none     &none     &gresc     &kp SPACE		&trans	&kp LGUI &none     &kp KP_N1 &kp KP_N2 &kp KP_N3 &none  &kp RCTRL
-							   &cp C_MUTE &kp TAB   &kp LCTRL &kp LSHFT  &kp SPACE		&trans	&kp BSPC &kp DEL   &kp RALT  &none
+	&gresc    &kp N1  &kp N2   &kp N3     &kp N4    &kp N5												 &kp N6        &kp N7    &kp N8    &kp N9    &kp N0 &kp BSLH
+	&kp TAB   &kp TAB &kp LEFT &kp UP     &kp RIGHT &none												 &kp KP_N0     &kp KP_N4 &kp KP_N5 &kp KP_N6 &none  &kp SQT
+	&kp LSHFT &none   &none    &kp DOWN   &none     &none     &gresc     &kp SPACE		&trans	&kp LGUI &kp SEPARATOR &kp KP_N1 &kp KP_N2 &kp KP_N3 &none  &kp RCTRL
+							   &cp C_MUTE &kp TAB   &kp LCTRL &kp LSHFT  &kp SPACE		&trans	&kp BSPC &kp DEL       &kp RALT  &none
 			>;
 
 			sensor-bindings = <&inc_dec_kp K_VOL_DN2 K_VOL_UP2 &inc_dec_kp PG_DN PG_UP>;
