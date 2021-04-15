@@ -37,7 +37,7 @@
 	&gresc    &kp Q &kp W &kp F      &kp P   &kp B												 		       &kp J   &kp L	&kp U     &kp Y	   &kp SEMI      &kp BSLH
 	&kp TAB   &kp A &kp R &kp S      &kp T   &kp G												 		       &kp M   &kp N    &kp E 	  &kp I    &kp O 	     &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C      &kp D   &kp V     &gresc     &lt LOWER SPACE		&lt RAISE RET &kp LGUI &kp K   &kp H    &kp COMMA &kp DOT  &lt UTIL FSLH &kp RCTRL
-					&lt LOWER C_MUTE &kp TAB &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET &kp BSPC &kp DEL &kp RALT &tog GAME
+					&lt LOWER C_MUTE &kp TAB &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET &kp BSPC &kp DEL &kp RALT &to GAME
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -113,7 +113,7 @@
 	&gresc    &kp Q &kp W &kp F      &kp P   &kp B												 		         &kp J   &kp L    &kp U     &kp Y   &kp SEMI &kp BSLH
 	&kp TAB   &kp A &kp R &kp S      &kp T   &kp G												 		         &kp M   &kp N    &kp E     &kp I   &kp O    &kp SQT
 	&kp LSHFT &kp Z &kp X &kp C      &kp D   &kp V     &gresc     &lt LOWER SPACE		&lt RAISE RET	&kp LGUI &kp K   &kp H    &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-					&lt LOWER C_MUTE &kp TAB &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL &kp RALT &tog GAME
+					&lt LOWER C_MUTE &kp TAB &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL &kp RALT &to DEFAULT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
