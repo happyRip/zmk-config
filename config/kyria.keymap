@@ -110,10 +110,10 @@
 			label = "Game";
 
 			bindings = <
-	&gresc    &kp Q &kp W &kp F      &kp P   &kp B												 		         &kp J   &kp L    &kp U     &kp Y   &kp SEMI &kp BSLH
-	&kp TAB   &kp A &kp R &kp S      &kp T   &kp G												 		         &kp M   &kp N    &kp E     &kp I   &kp O    &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C      &kp D   &kp V     &gresc     &lt LOWER SPACE		&lt RAISE RET	&kp LGUI &kp K   &kp H    &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-					&lt LOWER C_MUTE &kp TAB &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL &kp RALT &to DEFAULT
+	&gresc    &kp KP_N1 &kp Q &kp Z      &kp E   &kp I												 		         &trans  &trans   &trans    &trans   &trans &kp BSLH
+	&kp TAB   &kp KP_N2 &kp A &kp W      &kp D   &kp F												 		         &trans  &trans   &trans    &trans   &trans &kp SQT
+	&kp LSHFT &kp KP_N3 &kp X &kp S      &kp C   &kp M     &gresc     &lt LOWER SPACE		&lt RAISE RET	&kp LGUI &trans  &trans   &trans    &trans   &trans &kp RCTRL
+					    &lt LOWER C_MUTE &kp TAB &kp LCTRL &kp LSHFT  &lt LOWER SPACE		&lt RAISE RET	&kp BSPC &kp DEL &kp RALT &to DEFAULT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
