@@ -45,17 +45,17 @@
         modifier_layer { // keys on each side compliment each other in some way
 // ------------------------------------------ MODIFIER LAYER --------------------------------------------
 // | ESC |  <  |  [  |  {  |  (  |  /  |                           |  \  |  )  |   }  |  ]  |  >  |  \  |
-// | TAB |  %  |  #  |  *  |  +  |  @  |                           |  &  |  -  |   =  |  ^  |  $  |  '  |
-// | SFT |  |  |  '  |  !  |  :  |  ,  | ESC |     |  | RET |  GUI |  .  |  ;  |   ?  |  "  |  _  | CTR |
-//                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |  GMR |
+// | TAB |  #  |  _  |  *  |  +  |  @  |                           |  &  |  -  |   =  |  |  |  $  |  '  |
+// | SFT |  %  |  '  |  !  |  :  |  ,  | ESC |     |  | RET |  GUI |  .  |  ;  |   ?  |  "  |  ^  | CTR |
+//                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |      |
 
             label = "Modifier";
 
             bindings = <
-    &gresc    &kp LT    &kp LBKT &kp LBRC &kp LPAR  &kp FSLH                                                             &kp BSLH &kp RPAR  &kp RBRC  &kp RBKT  &kp GT    &kp BSLH
-    &kp TAB   &kp PRCNT &kp HASH &kp STAR &kp PLUS  &kp AT                                                               &kp AMPS &kp MINUS &kp EQUAL &kp CARET &kp DLLR  &kp SQT
-    &kp LSHFT &kp PIPE  &kp APOS &kp EXCL &kp COLON &kp COMMA &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp DOT  &kp SEMI  &kp QMARK &kp DQT   &kp UNDER &kp RCTRL
-                                 &trans   &kp TAB   &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
+    &gresc    &kp LT    &kp LBKT  &kp LBRC &kp LPAR  &kp FSLH                                                             &kp BSLH &kp RPAR  &kp RBRC  &kp RBKT &kp GT    &kp BSLH
+    &kp TAB   &kp HASH  &kp UNDER &kp STAR &kp PLUS  &kp AT                                                               &kp AMPS &kp MINUS &kp EQUAL &kp PIPE &kp DLLR  &kp SQT
+    &kp LSHFT &kp PRCNT &kp APOS  &kp EXCL &kp COLON &kp COMMA &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp DOT  &kp SEMI  &kp QMARK &kp DQT  &kp CARET &kp RCTRL
+                                  &trans   &kp TAB   &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -66,7 +66,7 @@
 // | ESC |     |  7  |  8  |  9  |  .  |                          | DWN | RGT |     |     |     |  \  |
 // | TAB | TAB |  4  |  5  |  6  |  0  |                          | HME | PGD | PGU | END |     |  '  |
 // | SFT |     |  1  |  2  |  3  |  ,  | ESC | SPC |  |     | GUI |  UP | LFT |     |     |     | CTR |
-//                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
+//                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT |     |
 
             label = "Number";
 
@@ -84,7 +84,7 @@
 // ----------------------------------------- UTILITY LAYER --------------------------------------------
 // | F1  | F2  | F3  | F4  | F5  | F6  |                          | F7  | F8  | F9  | F10 | F11 | F12 |
 // | EFF | SPI | BRI | SAI | HUI | TOG |                          | BT0 | BT1 | BT2 | BT3 | BT4 |     |
-// | EFR | SPD | BRD | SAD | HUD | TEX | ESC | SPC |  |     | GUI | PTG | NXT | PRV | CLR |     | BTG |
+// | EFR | SPD | BRD | SAD | HUD | PTG | ESC | SPC |  |     | GUI | PTG | NXT | PRV | CLR |     | BTG |
 //                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT | GMR |
 
             label = "Utility";
