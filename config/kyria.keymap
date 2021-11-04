@@ -43,11 +43,11 @@
         };
 
         modifier_layer { // keys on each side compliment each other in some way
-// ------------------------------------------ MODIFIER LAYER --------------------------------------------
-// | ESC |  <  |  [  |  {  |  (  |  /  |                           |  \  |  )  |   }  |  ]  |  >  |  \  |
-// | TAB |  #  |  _  |  *  |  +  |  @  |                           |  &  |  -  |   =  |  |  |  $  |  '  |
-// | SFT |  %  |  '  |  !  |  :  |  ,  | ESC |     |  | RET |  GUI |  .  |  ;  |   ?  |  "  |  ^  | CTR |
-//                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |      |
+// ------------------------------------------ MODIFIER LAYER -------------------------------------------
+// | ESC |  <  |  [  |  {  |  (  |  /  |                           |  \  |  )  |  }  |  ]  |  >  |  \  |
+// | TAB |  #  |  *  |  +  |  _  |  @  |                           |  &  |  -  |  =  |  ^  |  $  |  '  |
+// | SFT |  %  |  '  |  `  |  :  |  '  | ESC |     |  | RET |  GUI |  "  |  ;  |  ~  |  "  |  |  | CTR |
+//                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |     |
 
             label = "Modifier";
 
@@ -63,17 +63,17 @@
 
         number_layer {
 // ------------------------------------------ NUMBER LAYER --------------------------------------------
-// | ESC |     |  7  |  8  |  9  |  .  |                          | DWN | RGT |     |     |     |  \  |
+// | ESC | ESC |  7  |  8  |  9  |  ,  |                          | DWN | RGT |     |     |     |  \  |
 // | TAB | TAB |  4  |  5  |  6  |  0  |                          | HME | PGD | PGU | END |     |  '  |
-// | SFT |     |  1  |  2  |  3  |  ,  | ESC | SPC |  |     | GUI |  UP | LFT |     |     |     | CTR |
+// | SFT | CPS |  1  |  2  |  3  |  .  | ESC | SPC |  |     | GUI |  UP | LFT |     |     |     | CTR |
 //                   | MUT | TAB | CTR | SFT | SPC |  |     | BSP | DEL | ALT |     |
 
             label = "Number";
 
             bindings = <
-    &gresc    &none   &kp N7 &kp N8     &kp N9  &kp DOT                                                              &kp DOWN &kp RIGHT &none     &none   &none  &kp BSLH
-    &kp TAB   &kp TAB &kp N4 &kp N5     &kp N6  &kp N0                                                               &kp HOME &kp PG_DN &kp PG_UP &kp END &none  &kp SQT
-    &kp LSHFT &none   &kp N1 &kp N2     &kp N3  &kp COMMA &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp UP   &kp LEFT  &none     &none   &none  &kp RCTRL
+    &gresc    &gres    &kp N7 &kp N8    &kp N9  &kp DOT                                                              &kp DOWN &kp RIGHT &none     &none   &none  &kp BSLH
+    &kp TAB   &kp TAB  &kp N4 &kp N5    &kp N6  &kp N0                                                               &kp HOME &kp PG_DN &kp PG_UP &kp END &none  &kp SQT
+    &kp LSHFT &kp CAPS &kp N1 &kp N2    &kp N3  &kp COMMA &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp UP   &kp LEFT  &none     &none   &none  &kp RCTRL
                              &cp C_MUTE &kp TAB &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
             >;
 
