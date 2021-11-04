@@ -52,10 +52,10 @@
             label = "Modifier";
 
             bindings = <
-    &gresc    &kp LT    &kp LBKT  &kp LBRC &kp LPAR  &kp FSLH                                                             &kp BSLH &kp RPAR  &kp RBRC  &kp RBKT &kp GT    &kp BSLH
-    &kp TAB   &kp HASH  &kp UNDER &kp STAR &kp PLUS  &kp AT                                                               &kp AMPS &kp MINUS &kp EQUAL &kp PIPE &kp DLLR  &kp SQT
-    &kp LSHFT &kp PRCNT &kp APOS  &kp EXCL &kp COLON &kp COMMA &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp DOT  &kp SEMI  &kp QMARK &kp DQT  &kp CARET &kp RCTRL
-                                  &trans   &kp TAB   &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
+    &gresc    &kp LT    &kp LBKT  &kp LBRC &kp LPAR  &kp FSLH                                                             &kp BSLH  &kp RPAR  &kp RBRC  &kp RBKT  &kp GT   &kp BSLH
+    &kp TAB   &kp HASH  &kp STAR  &kp PLUS &kp UNDER &kp AT                                                               &kp AMPS  &kp MINUS &kp EQUAL &kp CARET &kp DLLR &kp SQT
+    &kp LSHFT &kp PRCNT &kp GRAVE &kp EXCL &kp COLON &kp APOS  &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp QMARK &kp SEMI  &kp TILDE &kp DQT   &kp PIPE &kp RCTRL
+                                  &trans   &kp TAB   &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL   &kp LALT  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
@@ -71,7 +71,7 @@
             label = "Number";
 
             bindings = <
-    &gresc    &gres    &kp N7 &kp N8    &kp N9  &kp DOT                                                              &kp DOWN &kp RIGHT &none     &none   &none  &kp BSLH
+    &gresc    &gresc   &kp N7 &kp N8    &kp N9  &kp DOT                                                              &kp DOWN &kp RIGHT &none     &none   &none  &kp BSLH
     &kp TAB   &kp TAB  &kp N4 &kp N5    &kp N6  &kp N0                                                               &kp HOME &kp PG_DN &kp PG_UP &kp END &none  &kp SQT
     &kp LSHFT &kp CAPS &kp N1 &kp N2    &kp N3  &kp COMMA &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp UP   &kp LEFT  &none     &none   &none  &kp RCTRL
                              &cp C_MUTE &kp TAB &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
