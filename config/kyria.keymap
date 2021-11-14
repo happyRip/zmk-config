@@ -46,16 +46,16 @@
 // ------------------------------------------ MODIFIER LAYER -------------------------------------------
 // | ESC |  <  |  [  |  {  |  (  |  /  |                           |  \  |  )  |  }  |  ]  |  >  |  \  |
 // | TAB |  #  |  *  |  +  |  _  |  @  |                           |  &  |  -  |  =  |  ^  |  $  |  '  |
-// | SFT |  %  |  `  |  !  |  :  |  '  | ESC |     |  | RET |  GUI |  "  |  ;  |  ?  |  ~  |  |  | CTR |
+// | SFT |  %  |  !  |  `  |  :  |  '  | ESC |     |  | RET |  GUI |  "  |  ;  |  ~  |  ?  |  |  | CTR |
 //                   | MUT | TAB | CTR | SFT |     |  | RET |  BSP | DEL | ALT |     |
 
             label = "Modifier";
 
             bindings = <
-    &gresc    &kp LT    &kp LBKT  &kp LBRC &kp LPAR  &kp FSLH                                                             &kp BSLH &kp RPAR  &kp RBRC  &kp RBKT  &kp GT   &kp BSLH
-    &kp TAB   &kp HASH  &kp STAR  &kp PLUS &kp UNDER &kp AT                                                               &kp AMPS &kp MINUS &kp EQUAL &kp CARET &kp DLLR &kp SQT
-    &kp LSHFT &kp PRCNT &kp GRAVE &kp EXCL &kp COLON &kp APOS  &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp DQT  &kp SEMI  &kp QMARK &kp TILDE &kp PIPE &kp RCTRL
-                                  &trans   &kp TAB   &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
+    &gresc    &kp LT    &kp LBKT  &kp LBRC  &kp LPAR  &kp FSLH                                                             &kp BSLH &kp RPAR  &kp RBRC  &kp RBKT  &kp GT   &kp BSLH
+    &kp TAB   &kp HASH  &kp STAR  &kp PLUS  &kp UNDER &kp AT                                                               &kp AMPS &kp MINUS &kp EQUAL &kp CARET &kp DLLR &kp SQT
+    &kp LSHFT &kp PRCNT &kp EXCL  &kp GRAVE &kp COLON &kp APOS  &gresc        &lt LOWER SPACE  &lt RAISE RET &kp LGUI      &kp DQT  &kp SEMI  &kp TILDE &kp QMARK &kp PIPE &kp RCTRL
+                                  &trans    &kp TAB   &kp LCTRL &mt LSHFT TAB &lt LOWER SPACE  &lt RAISE RET &mt RALT BSPC &kp DEL  &kp LALT  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
