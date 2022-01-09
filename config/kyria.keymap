@@ -21,22 +21,22 @@
 
 / {
     behaviors {
-        lh_pht: left_hand_positional_hold_tap {
+        rh_pht: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
         };
 
-        rh_pht: right_hand_positional_hold_tap {
+        lh_pht: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
