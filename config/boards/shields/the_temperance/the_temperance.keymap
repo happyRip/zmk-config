@@ -1,0 +1,53 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
+
+#include "combo.dtsi"
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+//       |  W  |  F  |  P  |  B  ||  J  |  L  |  U  |  Y  |
+// |  A  |  R  |  S  |  T  |  G  ||  K  |  N  |  E  |  I  |  O  |
+// |  Z  |  X  |  C  |  D  |            |  H  |  M  |  V  |  Q  |
+//                   | TAB | SPC || RET | BSP |
+            bindings = <
+          &kp W &kp F &kp P     &kp B        &kp J     &kp L &kp U &kp Y
+    &kp A &kp R &kp S &kp T     &kp G        &kp K     &kp N &kp E &kp I &kp O
+    &kp Z &kp X &kp C &kp D                            &kp H &kp M &kp V &kp Q
+                      &kp LOWER &kp SPACE    &kp LSHFT &kp RAISE
+            >;
+        };
+
+        modifier_layer {
+//       |  {  |  (  |  /  |  @  ||  &  |  \  |  )  |  }  |
+// |  #  |  *  |  +  |  -  |  ,  ||  .  |  _  |  =  |  ^  |  $  |
+// |  %  |  !  |  `  |  :  |            |  ;  |  ~  |  ?  |  |  |
+//                   | TAB | --- || RET | DEL |
+            bindings = <
+              &kp LBRC &kp LPAR  &kp FSLH  &kp AT       &kp AMPS &kp BSLH  &kp RPAR  &kp RBRC
+    &kp HASH  &kp STAR &kp PLUS  &kp MINUS &kp COMMA    &kp DOT  &kp UNDER &kp EQUAL &kp CARET &kp DLLR
+    &kp PRCNT &kp EXCL &kp GRAVE &kp COLON                       &kp SEMI  &kp TILDE &kp QMARK &kp PIPE
+                                 &kp TAB   &trans       &kp RET  &kp DEL
+            >;
+        };
+
+        number_layer {
+//       |  4  |  5  |  6  |  .  || DWN | RGT |     |     |
+// |  0  |  1  |  2  |  3  |  ,  ||  UP | HME | PGD | PGU | END |
+// |     |  7  |  8  |  9  |            | LFT |     |     |     |
+//                   | ESC | SPC || --- | DEL |
+            bindings = <
+           &kp N4 &kp N5 &kp N6  &kp DOT      &kp DOWN &kp RIGHT &none     &none
+    &kp N0 &kp N1 &kp N2 &kp N3  &kp COMMA    &kp UP   &kp HOME  &kp PG_DN &kp PG_UP &kp END
+    &none  &kp N7 &kp N8 &kp N9                        &kp LEFT  &none     &none     &none
+                         &kp ESC &kp SPACE    &trans   &kp DEL
+            >;
+        };
+    };
+};

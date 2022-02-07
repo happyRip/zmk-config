@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: happyrip
+      url-base: https://github.com/happyrip
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: happyrip
+      revision: zephyr-2.5-upgrade
       import: app/west.yml
   self:
     path: config

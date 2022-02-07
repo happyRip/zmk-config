@@ -1,0 +1,74 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │      0   1   2   3 │ │  4   5   6   7     │
+  │  8   9  10  11  12 | | 13  14  15  16  17 │
+  │ 18  19  20  21     │ │     22  23  24  26 │
+  ╰───────────╮ 27  28 │ │ 29  30 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
+
+#define TIMEOUT 25
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
+
+/ {
+    behaviors {
+        cm: combo_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "COMBO MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&sk>, <&kp>;
+        };
+    };
+    
+    combos {
+        compatible = "zmk,combos";
+
+        /* HORIZONTAL */
+        COMBO(ctrl_l, &cm LCTRL LCTRL, 10 11, DEFAULT, TIMEOUT)
+        COMBO(ctrl_r, &cm LCTRL LCTRL, 14 15, DEFAULT, TIMEOUT)
+        COMBO(lalt_l, &cm  LALT  LALT,  9 10, DEFAULT, TIMEOUT)
+        COMBO(lalt_r, &cm  LALT  LALT, 15 16, DEFAULT, TIMEOUT)
+        COMBO(lgui_l, &cm  LGUI  LGUI,  8  9, DEFAULT, TIMEOUT)
+        COMBO(lgui_r, &cm  LGUI  LGUI, 16 17, DEFAULT, TIMEOUT)
+
+        COMBO(esc,   &kp ESC,    0  1, DEFAULT, TIMEOUT)
+        COMBO(tab,   &kp TAB,    1  2, DEFAULT, TIMEOUT)
+        COMBO(copy,  &kp LC(C), 19 20, DEFAULT, TIMEOUT)
+        COMBO(cut,   &kp LC(X), 18 19, DEFAULT, TIMEOUT)
+        COMBO(paste, &kp LC(V), 20 21, DEFAULT, TIMEOUT)
+        COMBO(bspc,  &kp BSPC,   5  6, DEFAULT, TIMEOUT)
+        COMBO(del,   &kp DEL,    6  7, DEFAULT, TIMEOUT)
+        COMBO(ret,   &kp RET,   22 23, DEFAULT, TIMEOUT)
+        COMBO(ralt,  &kp RALT,  23 24, DEFAULT, TIMEOUT)
+
+        /* VERTICAL */
+        COMBO(comma, &kp COMMA,  3 12, DEFAULT, TIMEOUT)
+        COMBO(dot,   &kp DOT,    4 13, DEFAULT, TIMEOUT)
+        COMBO(apos,  &kp APOS,   9 19, DEFAULT, TIMEOUT)
+        COMBO(dqt,   &kp DQT,   16 24, DEFAULT, TIMEOUT)
+        COMBO(plus,  &kp PLUS,  10 20, DEFAULT, TIMEOUT)
+        COMBO(equal, &kp EQUAL, 15 23, DEFAULT, TIMEOUT)
+        COMBO(minus, &kp MINUS, 11 21, DEFAULT, TIMEOUT)
+        COMBO(under, &kp UNDER, 14 22, DEFAULT, TIMEOUT)
+        COMBO(fslsh, &kp FSLH,   2 11, DEFAULT, TIMEOUT)
+        COMBO(bslsh, &kp BSLH,   5 14, DEFAULT, TIMEOUT)
+        COMBO(lpar,  &kp LPAR,   1 10, DEFAULT, TIMEOUT)
+        COMBO(rpar,  &kp RPAR,   6 15, DEFAULT, TIMEOUT)
+        COMBO(lbrc,  &kp LBRC,   0  9, DEFAULT, TIMEOUT)
+        COMBO(rbrc,  &kp RBRC,   7 16, DEFAULT, TIMEOUT)
+        COMBO(lbkt,  &kp LBKT,   1 10, LOWER,   TIMEOUT)
+        COMBO(rbkt,  &kp RBKT,   6 15, LOWER,   TIMEOUT)
+        COMBO(lt,    &kp LT,     0  9, LOWER,   TIMEOUT)
+        COMBO(gt,    &kp GT,     7 16, LOWER,   TIMEOUT)
+    };
+};

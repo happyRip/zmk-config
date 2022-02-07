@@ -1,0 +1,9 @@
+if SHIELD_TEMPERANCE
+
+config ZMK_KEYBOARD_NAME
+    default "XIV Temperance"
+
+config ZMK_USB
+    default y
+
+endif
