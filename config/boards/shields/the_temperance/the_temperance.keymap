@@ -5,7 +5,7 @@
 #define LOWER   1
 #define RAISE   2
 
-#include "combo.dtsi"
+// #include "combo.dtsi"
 
 / {
     keymap {
