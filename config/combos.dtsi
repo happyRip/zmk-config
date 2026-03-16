@@ -1,0 +1,95 @@
+/*
+ * Key positions
+ *
+ *     ┌───┬───┬───┬───┐       ┌───┬───┬───┬───┐
+ *     │ 0 │ 1 │ 2 │ 3 │       │ 4 │ 5 │ 6 │ 7 │
+ * ┌───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┐
+ * │ 8 │ 9 │10 │11 │12 │       │13 │14 │15 │16 │17 │
+ * ├───┼───┼───┼───┼───┘       └───┼───┼───┼───┼───┤
+ * │18 │19 │20 │21 │               │22 │23 │24 │25 │
+ * └───┴───┴───┼───┼───┐       ┌───┼───┼───┴───┴───┘
+ *             │26 │27 │       │28 │29 │
+ *             └───┴───┘       └───┴───┘
+ *
+ * Horizontal
+ *
+ *   Modifiers
+ *    8, 9 | 16,17   Shift
+ *    9,10 | 15,16   Alt
+ *   10,11 | 14,15   Ctrl
+ *   11,12 | 13,14   Meta
+ *
+ *   Functions
+ *    0, 1           Esc
+ *    1, 2           Copy (MacOS)
+ *    5, 6           Paste (MacOS)
+ *    6, 7           Caps Word
+ *
+ * Vertical
+ *
+ *   Functions
+ *    3,12           Backspace
+ *    4,13           Delete
+ *   11,21           Tab
+ *   14,22           Enter
+ *
+ *   Alpha
+ *    9,19           X
+ *   10,20           V
+ *   15,23           ;
+ *   16,24           Q
+ *
+ *   Special
+ *    0, 9           `
+ *    1,10           -
+ *    2,11           /
+ *    5,14           \
+ *    6,15           =
+ *    7,16           $
+ *
+ */
+
+#define COMBO(name, pos, bind, lyrs) \
+    combo_##name { timeout-ms = <50>; key-positions = <pos>; bindings = <bind>; layers = <lyrs>; };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // Horizontal - Modifiers
+        COMBO(lshift, 8 9,   &kp LSHFT, DEF SYM NUM)
+        COMBO(rshift, 16 17, &kp RSHFT, DEF SYM NUM)
+        COMBO(lalt,   9 10,  &kp LALT,  DEF SYM NUM)
+        COMBO(ralt,   15 16, &kp RALT,  DEF SYM NUM)
+        COMBO(lctrl,  10 11, &kp LCTRL, DEF SYM NUM)
+        COMBO(rctrl,  14 15, &kp RCTRL, DEF SYM NUM)
+        COMBO(lmeta,  11 12, &kp LGUI,  DEF SYM NUM)
+        COMBO(rmeta,  13 14, &kp RGUI,  DEF SYM NUM)
+
+        // Horizontal - Functions
+        COMBO(esc,       0 1, &kp ESC,    DEF SYM NUM)
+        COMBO(copy,      1 2, &kp LG(C),  DEF SYM NUM)
+        COMBO(paste,     5 6, &kp LG(V),  DEF SYM NUM)
+        COMBO(caps_word, 6 7, &caps_word, DEF SYM NUM)
+
+        // Vertical - Functions
+        COMBO(bspc,  3 12,  &kp BSPC, DEF SYM NUM)
+        COMBO(del,   4 13,  &kp DEL,  DEF SYM NUM)
+        COMBO(tab,   11 21, &kp TAB,  DEF SYM NUM)
+        COMBO(enter, 14 22, &kp RET,  DEF SYM NUM)
+
+        // Vertical - Alpha
+        COMBO(x,    9 19,  &kp X,    DEF SYM)
+        COMBO(v,    10 20, &kp V,    DEF SYM)
+        COMBO(semi, 15 23, &kp SEMI, DEF SYM)
+        COMBO(q,    16 24, &kp Q,    DEF SYM)
+
+        // Vertical - Special
+        COMBO(grave, 0 9,  &kp GRAVE, DEF SYM)
+        COMBO(minus, 1 10, &kp MINUS, DEF SYM)
+        COMBO(fslh,  2 11, &kp FSLH,  DEF SYM)
+        COMBO(bslh,  5 14, &kp BSLH,  DEF SYM)
+        COMBO(equal, 6 15, &kp EQUAL, DEF SYM)
+        COMBO(dllr,  7 16, &kp DLLR,  DEF SYM)
+    };
+};
