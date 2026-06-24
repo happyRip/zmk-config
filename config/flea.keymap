@@ -39,14 +39,14 @@
 // ┌───┼───┼───┼───┼───┤       ├───┼───┼───┼───┼───┐
 // │ A │ R │ S │ T │ G │       │ K │ N │ E │ I │ O │
 // ├───┼───┼───┼───┼───┘       └───┼───┼───┼───┼───┤
-// │ Z │ M │ C │ D │               │ H │ , │ . │ / │
+// │ Z │ M │ C │ D │               │ H │ , │ . │ ' │
 // └───┴───┴───┼───┼───┐       ┌───┼───┼───┴───┴───┘
 //             │SYM│SFT│       │SPC│NUM│
 //             └───┴───┘       └───┴───┘
             bindings = <
                       &kp W &kp F &kp P   &kp B       &kp J   &kp L &kp U    &kp Y
                 &kp A &kp R &kp S &kp T   &kp G       &kp K   &kp N &kp E    &kp I   &kp O
-                &kp Z &kp M &kp C &kp D                       &kp H &kp CMMA &kp DOT &kp FSLH
+                &kp Z &kp M &kp C &kp D                       &kp H &kp CMMA &kp DOT &kp SQT
                                   &mo SYM &kp LSHFT   &kp SPC &mo NUM
             >;
         };
