@@ -16,6 +16,5 @@ include:
   - board: "nice_nano/nrf52840/zmk"
     shield: "flea_left"
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: "nice_nano/nrf52840/zmk"
     shield: "flea_right"
